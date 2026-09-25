@@ -74,7 +74,9 @@ The complete hash was then used as the input for the password-cracking stage.
 
 ### Evidence
 
-![PDF Hash Extraction](screenshots/01-pdf-hash.png)
+![PDF Hash Extraction](Screenshots/pdf1_hash_screenshot.png)
+![PDF Hash Extraction](Screenshots/pdf2_hash_screenshot.png)
+![PDF Hash Extraction](Screenshots/pdf3_hash_screenshot.png)
 
 ---
 
@@ -96,9 +98,7 @@ Rather than continue with a configuration I was no longer confident in, I decide
 
 ### Evidence
 
-![John the Ripper Setup](screenshots/02-john-setup.png)
-
-![Johnny Issue](screenshots/03-johnny-issue.png)
+![John the Ripper Setup](Screenshots/jtr_setup_screenshot.png)
 
 ---
 
@@ -114,6 +114,7 @@ The passwords for the protected PDFs were not recovered using this initial dicti
 
 This was an important point in the practical because it showed me that having a password-cracking tool is not enough on its own. The **quality and size of the wordlist** can have a major effect on the outcome.
 
+![Wordlist Issue](Screenshots/wordlist_issue_screenshot.png)
 ---
 
 # 📚 Part 4 — Finding a Larger Wordlist
@@ -125,6 +126,9 @@ I found a larger wordlist associated with **JTR default/common passwords** and u
 Compared with the initial dictionary, the larger wordlist provided many more password candidates to test.
 
 This ultimately made the difference.
+
+![Cracking after using Wordlist](Screenshots/cracking_after_wordlist1_screenshot.png)
+![Cracking after using Wordlist](Screenshots/cracking_after_wordlist2_screenshot.png)
 
 ---
 
@@ -140,11 +144,17 @@ Using the larger wordlist, I successfully recovered the passwords for **all thre
 
 ### Evidence
 
-![PDF 1 Password Recovered](screenshots/04-pdf1-cracked.png)
+![PDF 1 Unlocked](Screenshots/pdf1_encryption_screenshot.png)
 
-![PDF 2 Password Recovered](screenshots/05-pdf2-cracked.png)
+![PDF 1 Password Recovered](Screenshots/unlocked_pdf1.png).
 
-![PDF 3 Password Recovered](screenshots/06-pdf3-cracked.png)
+![PDF 2 Unlocked](Screenshots/pdf2_encryption_screenshot.png)
+
+![PDF 2 Password Recovered](Screenshots/unlocked_pdf2.png)
+
+![PDF 3 Unlocked](Screenshots/pdf3_encryption_screenshot.png)
+
+![PDF 3 Password Recovered](Screenshots/unlocked_pdf3.png)
 
 ---
 
@@ -203,16 +213,6 @@ I learned that practical cybersecurity work is not always about getting the firs
 # 📸 Evidence
 
 Screenshots from the practical are included in the `screenshots/` directory.
-
-```text
-screenshots/
-├── 01-pdf-hash.png
-├── 02-john-setup.png
-├── 03-johnny-issue.png
-├── 04-pdf1-cracked.png
-├── 05-pdf2-cracked.png
-└── 06-pdf3-cracked.png
-```
 
 ---
 
